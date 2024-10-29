@@ -11,7 +11,6 @@ def file_name(path):  # returns file name without file extension
     return path[-1]
 
 
-
 exts = Image.registered_extensions()
 avaiable_formats = [ex for ex, f in exts.items() if f in Image.OPEN]
 avaiable_conv_types = ['L', '1', 'P', 'RGB', 'RGBA', 'CMYK', 'YCbCr', 'HSV', 'LAB', 'F', 'I', 'I;16', 'I;16B', 'I;16L', 'I;32', 'I;32B', 'I;32L', 'I;16U']  # arguments accepted by .convert() method
