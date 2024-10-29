@@ -2,13 +2,6 @@ import sys
 import os
 from PIL import Image
 
-def extension(path):  # returns file extension based on path returns NULL if no extension is found
-    path = path.split('.')
-    if len(path[-1].split('\\')) > 1:
-        return "NULL"
-    if len(path) == 1:
-        return "NULL"
-    return path[-1]
 
 def file_name(path):  # returns file name without file extension
     path = path.split('.')
